@@ -1,0 +1,28 @@
+<nav id="nav-bar" class="nav-bar px-md">
+  <a href="/" class="nav-bar-logo" aria-label="Homepage">
+    <img src="{{site.data.settings.branding.nav_logo_image}}" alt="{{site.data.settings.branding.site_title}} logo" class="responsive-img">
+  </a>
+  <div class="nav-bar-menu">
+    <!-- Menu items are rendered from the `settings.yml` file located in the `_data` folder -->
+    {% for menu in site.data.settings.navigation.menus %}
+    {% unless menu.is_dropdown %}
+    <a href="{{menu.url}}" class="nav-bar-menu--item {% if menu.style_as_button %}btn{% endif %}">Menu</a>
+    {% else %}
+    <button class="nav-bar-menu--item dropdown {% if menu.style_as_button %}btn{% endif %}">
+      Dropdown
+      <div class="dropdown-menu">
+      {% for submenu in menu.submenus %}
+        <a href="{{submenu.url}}" class="dropdown-menu--item">Submenu</a>
+      {% endfor %}
+      </div>
+    </button>
+    {% endunless %}
+    {% endfor %}
+  </div>
+  <button id="burger" class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>

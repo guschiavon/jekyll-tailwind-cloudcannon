@@ -1,0 +1,185 @@
+@mixin hover-transition {
+  transition: 0.2s all;
+}
+
+.btn,
+.btn-outline--light,
+.btn-outline--dark {
+  font-family: $heading-font;
+  letter-spacing: 1px;
+  padding: 1.2rem 1.5rem;
+  margin: 1rem auto;
+  border: 2px solid;
+  text-transform: uppercase;
+  @include hover-transition;
+}
+
+.btn {
+  background-color  : $accent-color;
+  color             : $light-color;
+  border-color      : inherit;
+  &:hover,
+  &:focus-within {
+    background-color: lighten($accent-color, 10);
+  }
+}
+
+.btn-outline--light {
+  color         : $light-color;
+  border-color  : inherit;
+  &:hover,
+  &:focus-within {
+    background-color  : $accent-color;
+    border-color      : $accent-color;
+  }
+}
+
+.btn-outline--dark {
+  border-color: $accent-color;
+  color: $accent-color;
+  &:hover,
+  &:focus-within {
+    color: $light-color;
+    background-color: $accent-color;
+  }
+}
+
+// Mobile navigation
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  width: 40px;
+  height: 30px;
+  outline: none;
+  z-index: 1001;
+  span {
+    width: 100%;
+    border: 2px solid;
+    border-radius: 2px;
+    border-color: $dark-color;
+    transition: all 0.2s ease-in-out;
+    &:nth-of-type(2),
+    &:nth-of-type(3) {
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+    }
+  }
+  &:active,
+  &:focus-within {
+    span {
+      border-color: $accent-color;
+    }
+  }
+}
+
+.burger.open {
+  span {
+    &:first-of-type {
+      opacity: 0;
+      transition: opacity 0.1s ease-in-out;
+    }
+    &:last-of-type {
+      opacity: 0;
+      transition: opacit2 0.1s ease-in-out;
+    }
+    &:nth-of-type(2) {
+      transform: rotate(-45deg);
+      transition: all 0.2s ease-in-out;
+    }
+    &:nth-of-type(3) {
+      transform: rotate(45deg);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+
+
+// Chat bubble
+$size: 40px;
+.chat-bubble-container {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+}
+
+#chat-bubble {
+  position: relative;
+  height: $size;
+  width: $size;
+  margin: auto;
+  border: none;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  z-index: 1001;
+  svg {
+    fill: $dark-color;
+  }
+  cursor: pointer;
+}
+
+#chat-bubble::before {
+  content   : '';
+  position  : absolute;
+  top       : 50%;
+  left      : 50%;
+  transform : translate(-50%, -50%);
+  width     : calc(#{$size} * 1.8);
+  height    : calc(#{$size} * 1.8);
+  border-radius   : 50%;
+  background-color: whitesmoke;
+  box-shadow      : 5px 5px 10px rgba(30, 30, 30, 0.5);
+  z-index         : -1;
+}
+#chat-bubble.active {
+  svg {
+    fill    : whitesmoke;
+  }
+  .chat-menu-item--icon svg {
+    fill: $accent-color;
+  }
+}
+#chat-bubble.active::before {
+  background    : rgb(3,158,173);
+  background    : linear-gradient(159deg, rgba(3,158,173,1) 0%, rgba(9,76,121,1) 35%, rgba(255,0,183,1) 100%);
+}
+
+.chat-menu {
+  position    : absolute;
+  bottom      : 80px;
+  right       : -1.25rem;
+  margin-bottom : 0;
+  transform   : translateX(200px);
+  transition  : 0.2s ease-in-out;
+  text-transform  : uppercase;
+  font-size : 1rem;
+  color : $accent-color;
+  background-color  : whitesmoke;
+  border-radius : 20px;
+  padding : 15px;
+}
+.chat-menu.open {
+  transform : translateX(0);
+  transition: 0.2s ease-in-out;
+}
+
+.chat-menu-item {
+  list-style  : none;
+}
+.chat-menu-item--icon {
+  width     : $size;
+  padding   : 5px;
+  max-width : unset;
+  height    : auto;
+  margin    : auto;
+  margin-bottom: 1.5rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+

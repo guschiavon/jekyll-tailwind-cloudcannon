@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+  <html lang="en">
+    {% include essentials/head.html %}
+    <body>
+      {% include essentials/nav-top-main.html %}
+      {% include essentials/header.html%}
+      {{content}}
+      {% include essentials/footer.html %}
+      {{site.data.settings.configuration.body_code_block}}
+      {% include essentials/scripts.html %}
+    </body>
+  </html>
