@@ -1,15 +1,15 @@
 ---
 ---
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-// Main Stylesheet
-
-// Colors
 $light-color          : {{site.data.settings.theme_settings.light_color}};
 $dark-color           : {{site.data.settings.theme_settings.dark_color}};
 $accent-color         : {{site.data.settings.theme_settings.accent_color}};
 $complementary-color  : {{site.data.settings.theme_settings.complementary_color}};
 
-// Fonts
+
 $body-font        : {{ site.data.settings.theme_settings.body_font_family }};
 $heading-font     : {{ site.data.settings.theme_settings.heading_font_family }};
 $body-font-size   : {{ site.data.settings.theme_settings.body_font_size_number }};

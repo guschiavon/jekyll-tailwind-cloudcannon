@@ -67,6 +67,8 @@ You must include the `cookie-banner.html` file and the `cookie-prefs.html` on th
 
 The cookie script is GDPR-EU-compliant and stores preferences on the client-side `sessionStorage`. When the page is refreshed or changed, the cookie banner will re-render as per GDPR-EU requirements. You can tweak the JS file to remember preferences when refreshing, to hide the cookie banner but do it at your own discretion. `sessionStorage` is cleared when the tab is closed.
 
+If required, add markup on the `cookies-banner.html` file and define variables on the `cookie-settings-v2.js` file.
+
 ## The WebP plugin
 
 The `jekyll-webp` plugin generates a `.webp` version of images inside the `/assets/images` folder. The plugin can be configured on the `_config.yml` file.
