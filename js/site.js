@@ -9,10 +9,10 @@ burger.addEventListener('click', function (){
 
 // Chat bubble
 
-const chatBubble = document.getElementById('chat-bubble');
-const chatMenu = document.querySelector('.chat-menu');
-chatBubble.addEventListener('click', function () {
-  this.classList.toggle('active');
-  chatMenu.classList.toggle('open');
-});
+// const chatBubble = document.getElementById('chat-bubble');
+// const chatMenu = document.querySelector('.chat-menu');
+// chatBubble.addEventListener('click', function () {
+//   this.classList.toggle('active');
+//   chatMenu.classList.toggle('open');
+// });
 
