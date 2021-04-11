@@ -14,7 +14,7 @@ general:
       add_to_chat_bubble: true
       url: 'https://facebook.com'
 branding:
-  site_title: Jekyll CloudCannon Boilerplate
+  site_title: Jekyll Tailwind CloudCannon
   nav_logo_image: /assets/images/logo.png
   footer_logo_image:
   preview_image:

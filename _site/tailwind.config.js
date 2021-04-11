@@ -1,3 +1,5 @@
+const customTheme = require('./_data/theme.json')
+
 module.exports = {
   purge: [
     "./_includes/**/*.html",
@@ -7,7 +9,7 @@ module.exports = {
   ],
   darkMode: false,
   theme: {
-    extend: {},
+    extend: customTheme,
   },
   variants: {},
   plugins: [require("@tailwindcss/typography")],
