@@ -1,8 +1,6 @@
 cloudcannon:
   data: true
 
-
-
 uploads_dir: "assets/images"
 
 comments:
