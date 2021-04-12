@@ -1,4 +1,4 @@
-const customTheme = require('./_data/custom-theme.json')
+const customTheme = require('./_data/theme.json')
 
 module.exports = {
   purge: [
