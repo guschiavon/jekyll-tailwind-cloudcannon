@@ -9,7 +9,7 @@ module.exports = {
   ],
   darkMode: false,
   theme: {
-    extend: customTheme,
+    extend: {},
   },
   variants: {},
   plugins: [require("@tailwindcss/typography")],
