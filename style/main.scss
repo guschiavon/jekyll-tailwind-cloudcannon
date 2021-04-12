@@ -4,25 +4,4 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-$light-color          : {{site.data.settings.theme_settings.light_color}};
-$dark-color           : {{site.data.settings.theme_settings.dark_color}};
-$accent-color         : {{site.data.settings.theme_settings.accent_color}};
-$complementary-color  : {{site.data.settings.theme_settings.complementary_color}};
-
-
-$body-font        : {{ site.data.settings.theme_settings.body_font_family }};
-$heading-font     : {{ site.data.settings.theme_settings.heading_font_family }};
-$body-font-size   : {{ site.data.settings.theme_settings.body_font_size_number }};
-$base-line-height : {{ site.data.settings.theme_settings.line_height_number }};
-
-
-@import
-  "_resets",
-  "_utility",
-  "_universal",
-  "_mixins",
-  "_buttons",
-  "_nav",
-  "_footer",
-  "_header",
-  "_media-queries";
+{{site.data.settings.configuration.custom_css_code_block}}

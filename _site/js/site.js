@@ -1,11 +1,11 @@
 // Navigation
 // Burger Menu
-const burger = document.getElementById('burger')
-const navMenu = document.querySelector('.nav-bar-menu')
-burger.addEventListener('click', function (){
-  this.classList.toggle('open')
-  navMenu.classList.toggle('active')
-})
+// const burger = document.getElementById('burger')
+// const navMenu = document.querySelector('.nav-bar-menu')
+// burger.addEventListener('click', function (){
+//   this.classList.toggle('open')
+//   navMenu.classList.toggle('active')
+// })
 
 // Chat bubble
 

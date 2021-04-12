@@ -1,12 +1,17 @@
 cloudcannon:
   data: true
 
+sass:
+  dir: _sass
+  style: compressed  
+
 uploads_dir: "assets/images"
 
 comments:
  body_font_family: Add the font code block on the configurations menu
  heading_font_family: Add the font code block on the configuratios menu
  preview_image: Image to be shown when sharing the site on social networks
+ custom_css_code_block: 'Add custom styles to your site (SCSS-compatible). This theme uses TailwindCSS 2.1. Important: You might require the assistance of a developer.'
 
 plugins:
   - jekyll-sitemap

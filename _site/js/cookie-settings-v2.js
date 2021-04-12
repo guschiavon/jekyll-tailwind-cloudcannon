@@ -11,6 +11,8 @@ const marketingConsent = document.getElementById("marketing");
 let savedPrefs = sessionStorage.getItem("consent");
 
 // function to create DOM element
+// const cookiesJSON = require('./_data/cookies.json')
+// console.log(cookiesJSON)
 
 const cookies = [
   {
