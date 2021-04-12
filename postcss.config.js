@@ -4,7 +4,7 @@ module.exports = {
     require("tailwindcss"),
     require("autoprefixer"),
     ...(process.env.JEKYLL_ENV == "production"
-      ? [require("cssnano")({ preset: "default" }), require('./_data/theme.json')]
+      ? [require("cssnano")({ preset: "default" })]
       : []),
   ],
 };
