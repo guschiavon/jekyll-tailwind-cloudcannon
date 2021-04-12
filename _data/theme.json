@@ -1,6 +1,6 @@
 {
   "colors": {
-    "custom-1": "#FF06BC",
-    "custom-2": "#BG3456"
+    "primary_color": "#FF06BC",
+    "secondary_color": "#BG3456"
   }
 }
