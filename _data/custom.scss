@@ -1,0 +1,24 @@
+/* Warning!! Advanced coding knowledge is required to edit this file; you might break your website's design and structure! If unsure about your skills to edit this file, you can contact our team at support@innatewebsites.com */
+/* This theme uses Tailwind 2.1.1 */
+
+.menu-active {
+  padding: 3rem 1.5rem;
+  height: 100vh;
+  width: 100vw;
+  transform: translateX(0);
+}
+.active span {
+  position: absolute;
+  top: 50%;
+  left: 50%;  
+  transform-origin: center;
+  &:first-of-type {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  &:nth-of-type(2) {
+    opacity: 0;
+  }
+  &:last-of-type {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}

@@ -7,15 +7,15 @@
     {% for menu in site.data.settings.navigation.menus %}
     {% unless menu.is_dropdown %}
     <a href="{{menu.url | append: '.html' }}" class="nav-bar-menu--item {% if menu.style_as_button %}py-2 px-6 bg-primary_color text-gray-100 rounded-full{%else%}px-4{% endif %} lg:ml-3 lg:text-base md:text-sm md:px-2 md:ml-1 uppercase tracking-wide hover:text-red-900 transition-colors duration-75">
-    {{menu.title}}
+    {{ menu.name }}
     </a>
     {% else %}
     <button class="nav-bar-menu--item group relative {% if menu.style_as_button %}py-2 px-4 bg-primary_color text-gray-100 rounded-full{% endif %} px-4 lg:ml-3 lg:text-base md:text-sm md:px-2 md:ml-1 uppercase tracking-wide hover:text-red-900 transition-colors duration-75">
-      {{menu.title}}
+      {{menu.name}}
       <div class="absolute bg-gray-300 flex flex-col group-hover:opacity-100 group-hover:z-90 group-focus-within:opacity-100 opacity-0 transition-opacity py-2 rounded w-full">
       {% for submenu in menu.submenus %}
         <a href="{{submenu.url | append: '.html' }}" class="">
-        {{submenu.title}}
+        {{submenu.name}}
         </a>
       {% endfor %}
       </div>
