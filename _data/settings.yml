@@ -53,6 +53,6 @@ seo:
   site_description_text:
   keywords:
 configuration:
-  head_code_block: '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">'
+  head_code_block: 
   body_code_block:
   custom_css_code_block:   
