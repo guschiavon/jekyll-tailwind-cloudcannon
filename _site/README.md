@@ -11,6 +11,22 @@ This boilerplate uses the following dependencies & plugins:
 - jekyll-webp (1.0)
 - jekyll-postcss
   
+## Project setup
+
+To start, run: 
+```
+$ npm i
+```
+
+Then, install the gems by running:
+```
+$ bundle install
+```
+
+Run Jekyll:
+```
+$ jekyll s --livereload
+```
 
 ## Using the `settings.yml` file
 
