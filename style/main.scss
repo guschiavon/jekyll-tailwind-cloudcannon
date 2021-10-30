@@ -1,7 +1,9 @@
 ---
 ---
+
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import "_data/custom.scss";
 
+{{site.data.settings.configuration.custom_css_code_block}};

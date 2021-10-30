@@ -77,3 +77,9 @@ Examples:
 <!-- using Liquid -->
 <img src="{{page.image}}" srcset="{{page.image | replace: "jpg", "webp"}}">
 ```
+
+## Troubleshooting
+
+If running into the `Error: unterminated attribute selector for type` error:
+
+Run `npm audit fix` to restore working order.
