@@ -24,7 +24,12 @@ webp:
   nested: true
   img_dir: ["/assets/images"]
   regenerate: false
-  
+
+picture:
+  source: "assets/images"
+  output: "assets/images/srcset"
+  suppress_warnings: true
+
 channels:
   - "Facebook"
   - "Instagram"

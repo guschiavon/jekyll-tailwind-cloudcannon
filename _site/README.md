@@ -83,3 +83,5 @@ Examples:
 **If running into the `Error: unterminated attribute selector for type` error:**
 
 Run `npm audit fix` to restore working order.
+
+Often, cleaning the cache by deleting the `.jekyll-cache` folder will also allow to run the `build` or `serve` commands
