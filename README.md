@@ -85,3 +85,7 @@ Examples:
 Run `npm audit fix` to restore working order.
 
 Often, cleaning the cache by deleting the `.jekyll-cache` folder will also allow to run the `build` or `serve` commands
+
+**If running into the PostCSS error `Cannot load module`:
+
+Delete both `node_modules` and `jekyll-cache` folders, run `npm i` and then start Jekyll server with `bundle exec jekyll s -l` 
