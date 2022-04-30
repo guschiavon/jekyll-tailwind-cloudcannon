@@ -19,16 +19,17 @@ plugins:
   - jekyll-webp
   - jekyll-postcss
   - jekyll-purgecss
+  - jekyll_picture_tag
 
-webp:
-  enabled: true
-  nested: true
-  img_dir: ["/assets/images"]
-  regenerate: false
+# webp:
+#   enabled: true
+#   nested: true
+#   img_dir: ["/assets/images"]
+#   regenerate: false
 
 picture:
-  source: "assets/images"
-  output: "assets/images/srcset"
+  source: "/"
+  output: "generated/"
   suppress_warnings: true
 
 channels:

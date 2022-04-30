@@ -1,9 +1,18 @@
 ---
 layout: default
+image: /assets/images/clau.jpg
 ---
 <main class="px-24 py-3 h-screen md:px-6 md:bg-gray-200 flex flex-col justify-center items-center">
   <h1 class="text-6xl font-body text-primary">
     Jekyll TailwindCSS Cloudcannon Boilerplate
   </h1>
-  {% picture jpt-webp logo.png %}
+  {% picture jpt-webp "{{site.data.settings.branding.nav_logo_image}}" %}
+  <div class="h-56 w-56 overflow-hidden">
+    {% picture jpt-webp "{{page.image}}" class="object-contain w-full h-full" %}
+  </div>
+
+  <div class="h-96 w-96 overflow-hidden bg-cover bg-center bg-no-repeat" style='background-image: url({% picture direct "{{page.image}}" %});'>
+
+  </div>
+
 </main>
